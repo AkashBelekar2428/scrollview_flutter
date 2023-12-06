@@ -46,41 +46,70 @@ class _MyHomePageState extends State<MyHomePage> {
 
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
 
-        title: Text(widget.title),
+        title: Text('ScrollView'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
           child: Column(
             children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(right: 11),
+                        width: 100,
+                        height: 100,
+                        color: Colors.pink,
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 11),
+                        width: 100,
+                        height: 100,
+                        color: Colors.blue,
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 11),
+                        width: 100,
+                        height: 100,
+                        color: Colors.grey,
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right:11),
+                        width: 100,
+                        height: 100,
+                        color: Colors.green,
+                      )
+                    ],
+                  ),
+                ),
+              ),
           Container(
           margin: EdgeInsets.only(bottom: 11),
           height: 200,
-          width: 200,
           color: Colors.green,
         ),
         Container(
           margin: EdgeInsets.only(bottom: 11),
           height: 200,
-          width: 200,
           color: Colors.blue,
         ),
         Container(
           margin: EdgeInsets.only(bottom: 11),
           height: 200,
-          width: 200,
           color: Colors.red,
         ),
         Container(
           margin: EdgeInsets.only(bottom: 11),
           height: 200,
-          width: 200,
           color: Colors.orange,
         ),
         Container(
           margin: EdgeInsets.only(bottom: 11),
           height: 200,
-          width: 200,
           color: Colors.pink,
         )
           ],
